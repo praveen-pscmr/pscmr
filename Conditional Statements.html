@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///C:/Users/hp/Documents/html/if,else,elif.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Conditional Statements</title>
+    <meta name="viewport" content="width=device-width" initial="1.0">
+    <style>
+        .body{
+            background-color: lightgray;
+        }
+        .h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            color: purple;
+        }
+        .table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        .stment{
+            background-color: gray;
+        }
+        .des{
+            background-color: grey;
+        }
+        th{
+         background-color: rgb(190, 183, 183);
+        }
+        td{
+            background-color: lightgray;
+        }
+        h2{
+            color: purple;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            
+        }
+        .div1{
+            background-color: rgb(237, 214, 218);
+            padding: 5px;
+            height: 50px;
+            width: 700px;
+        }
+        .div{
+            background-color: white;
+            width:900px;
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        .div2{
+            background-color: rgb(237, 214, 218);
+            padding: 5px;
+            height: 100px;
+            width: 700px;
+            padding-bottom: 10px;
+            
+        }
+        .div3{
+            background-color: lightgray;
+            padding: 5px;
+            height: 50px;
+            width: 700px;
+        }
+        .div4{
+            background-color: rgb(237, 214, 218);
+            padding: 5px;
+            height: 90px;
+            width: 700px;
+        }
+        .div5{
+            background-color: rgb(237, 214, 218);
+            padding: 5px;
+            height: 130px;
+            width: 700px;
+            padding-bottom: 10px;
+            
+        }
+        .div6{
+            background-color: lightgray;
+            padding: 5px;
+            height: 50px;
+            width: 700px;
+        }
+        .di{
+            background-color: rgb(237, 214, 218);
+            padding: 5px;
+            height: 130px;
+            width: 700px;
+            padding-bottom: 10px; 
+        }
+        .div7{
+            background-color: rgb(240, 229, 230);
+            padding: 5px;
+            height: 220px;
+            width: 700px;
+            padding-bottom: 10px;
+        }
+        .div8{
+            background-color: lightgray;
+            padding: 5px;
+            height: 50px;
+            width: 700px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body class="body">
+    <div class="div">
+<h1 class="h1">Python If-else Statements</h1>
+<p calss="p1">Decision making is the most important aspect of almost all the programming languages.<br> As the name implies, decision making allows us to run a particular block of code for a particular decision.</p>
+<p class="p2">In python, decision making is performed by the following statements.</p>
+<table border="1" class="table">
+    <tbody><tr>
+    <th class="stment">Statement </th>
+    <th class="des">Description</th>
+    </tr><tr>
+<th>If statement</th>
+<td>The if statement is used to test a specific condition.<br>
+    If the condition is true, a block of code (if-block) will be executed.</td>
+</tr>
+<tr>
+<th style="background-color:whitesmoke;">If - else<br> Statement</th>
+<td style="background-color:whitesmoke;">The if-else statement is similar to if statement except the fact that,<br> it also provides the block of the code for the false case of the condition to be<br> checked. If the condition provided in the if <br>statement is false, then the else statement will be executed.</td>
+
+</tr>   
+<tr>
+<th>Nested if <br>Statement	</th>
+<td>Nested if statements enable us to use if ? else statement inside an outer if statement.</td>
+</tr>
+</tbody></table>
+<h2>Indentation in Python</h2>
+<p>For the ease of programming and to achieve simplicity, python doesn't allow the use of parentheses for the block level code.<br> In Python, indentation is used to declare a block.</p>
+<p>Generally, four spaces are given to indent the statements which are a typical amount of indentation in python.</p>
+<p>Indentation is the most used part of the python language since it declares the block of code.<br> All the statements of one block are intended at the same level indentation</p>
+<h2>The if statement</h2>
+<img src="data:image/png;base64,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">
+<p>The syntax of the if-statement is given below.</p>
+<div class="div1">
+<pre><p>if expression:  
+    statement  </p>
+</pre>
+</div>
+<h3>Example 1</h3>
+<div class="div2">
+    <pre># Simple Python program to understand the if statement  
+num = int(input("enter the number:"))         
+# Here, we are taking an integer num and taking input dynamically  
+if num%2 == 0:      
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print("The Given number is an even number") 
+    </pre>
+</div>
+<h4>Output:</h4>
+<div class="div3">
+<pre>enter the number: 10
+The Given number is an even number 
+</pre>
+</div>
+<h2>The if-else statement</h2>
+<p>The if-else statement provides an else block combined with the if statement which is executed in the false case of the <br> condition.</p>
+<p>If the condition is true, then the if-block is executed. Otherwise, the else-block is executed.</p>
+<img src="./Conditional Statements_files/ifelseifflowchart-660x432.png">
+<p>The syntax of the if-else statement is given below.</p>
+<div class="div4">
+<pre>if condition:  
+    #block of statements   
+else:   
+    #another block of statements (else-block)   
+</pre>
+</div>
+<h3>Example 1 : Program to check whether a person is eligible to vote or not.</h3>
+<div class="div5">
+    <pre># Simple Python Program to check whether a person is eligible to vote or not.  
+age = int (input("Enter your age: "))    
+# Here, we are taking an integer num and taking input dynamically  
+if age&gt;=18:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print("You are eligible to vote !!");    
+else:    
+    print("Sorry! you have to wait !!");   
+    </pre>
+</div>
+<h4>Output:</h4>
+<div class="div6">
+<p>
+Enter your age: 90<br>
+You are eligible to vote !!
+</p>
+</div>
+<h2>The elif statement  </h2>
+<p>The elif statement enables us to check multiple conditions and execute the specific block of statements depending upon<br>
+</p><p>the true condition among them. We can have any number of elif statements in our program depending upon our need.<br>
+</p><p>However, using elif is optional.<br>
+</p><p>The elif statement works like an if-else-if ladder statement in C. It must be succeeded by an if statement.</p><br>
+<p>The syntax of the elif statement is given below.</p>
+<div class="di">
+<pre>if expression 1:   
+    # block of statements   
+  
+elif expression 2:   
+    # block of statements   
+  
+elif expression 3:   
+    # block of statements   
+  
+else:   
+    # block of statements  
+</pre>
+</div>
+<img src="./Conditional Statements_files/OIP.dEsGTO7R-tzb_ZQyjp8szAHaGs">
+<h4>Example 1</h4>
+<div class="div7">
+<pre># Simple Python program to understand elif statement  
+number = int(input("Enter the number?"))    
+# Here, we are taking an integer number and taking input dynamically  
+if number==10:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print("The given number is equals to 10")    
+elif number==50:  
+# Here, we are checking the condition. If the condition is true, we will enter the block    
+    print("The given number is equal to 50");    
+elif number==100:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print("The given number is equal to 100");    
+else:    
+    print("The given number is not equal to 10, 50 or 100");    
+</pre>
+</div>
+<h4>Output:</h4>
+<div class="div8">
+<p>Enter the number?15<br>
+    The given number is not equal to 10, 50 or 100</p>
+</div>
+<div class="container">
+    <div class="topic">Next Topic</div> 
+    <p>Python Loops:</p>
+    <button class="next-prev">← Prev</button>
+    <button class="next-prev">Next →</button>
+  </div><br><br>
+  <div>
+    <img src="./Conditional Statements_files/youtube-32.png">
+   <span>For Videos Join Our Youtube Channel:</span>
+   <a href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg">Join Now</a>
+</div>
+</div>
+</body></html>
